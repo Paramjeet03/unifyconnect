@@ -48,7 +48,7 @@ const HandGestureRecognition = ({ onGestureDetected }) => {
 
     try {
       // Send to FastAPI backend
-      const response = await fetch('YOUR_RENDER_URL/process_frame', {
+      const response = await fetch('https://unifyconnect.onrender.com/process_frame', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
